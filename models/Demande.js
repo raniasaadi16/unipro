@@ -11,8 +11,8 @@ var demandeSchema = new mongoose.Schema({
     },
     accepted: {
         type: String,
-        default: '',
-        enum: ['']
+        default: 'not treated',
+        enum: ['not treated', 'in progress', 'rejected', 'accepted']
     },
     offer: {
         type: mongoose.Schema.ObjectId,
